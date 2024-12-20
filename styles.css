@@ -1,0 +1,150 @@
+/* Global Styles */
+
+/* CSS */
+.myButtons {
+    align-items: center;
+    background-color: #94b1e4;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .myButtons:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .myButtons:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .myButtons:active {
+    background-color: #788eb3;
+    outline: 0;
+  }
+  
+  .myButtons:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }
+  
+  #buttonContainer {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  h1, .myStatus {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Button Container */
+  #buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  /* Heading Styling */
+  #myH1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2a3a54;
+  }
+  
+  /* Status Text Styling */
+  .myStatus {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Player and Computer Scores */
+  #playerScore,
+  #computerScore {
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #myH1 {
+      font-size: 1.5rem;
+      margin: 40px 0;
+
+    }
+  
+    .myStatus {
+      font-size: 1rem;
+    }
+  
+    #playerScore,
+    #computerScore {
+      font-size: 1.1rem;
+      
+    }
+  
+    #buttonContainer {
+      flex-direction: column;
+    }
+  }
+  .myStatus {
+    font-size: 1.5rem;
+
+  }
+  .myStatus1 {
+    font-size: 5rem;
+    margin: 30px 0;
+  }
+  
